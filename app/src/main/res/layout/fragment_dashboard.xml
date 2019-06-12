@@ -7,6 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".DashboardFragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
     <LinearLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -161,11 +165,10 @@
                 </LinearLayout>
 
             </HorizontalScrollView>
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
-                android:layout_marginTop="21dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="21dp">
                 <TextView
                     android:layout_width="51dp"
                     android:layout_height="24dp"
@@ -177,14 +180,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
                     android:text="View All"
                     android:textSize="14sp"
                     android:textColor="#0091ff"
-                    android:layout_marginStart="223dp"
                     android:layout_marginEnd="15dp"
                     android:clickable="true"
-                    android:focusable="true"/>
-            </LinearLayout>
+                    android:focusable="true"
+                    android:background="?selectableItemBackground"/>
+            </RelativeLayout>
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
@@ -194,11 +198,10 @@
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager">
             </android.support.v7.widget.RecyclerView>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="20dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
@@ -210,14 +213,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
                     android:text="View All"
                     android:textSize="14sp"
                     android:textColor="#0091ff"
-                    android:layout_marginStart="223dp"
                     android:layout_marginEnd="15dp"
                     android:clickable="true"
                     android:focusable="true"/>
-            </LinearLayout>
+            </RelativeLayout>
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
@@ -226,16 +229,16 @@
                 android:orientation="horizontal"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager">
             </android.support.v7.widget.RecyclerView>
-
-        <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginBottom="25dp"
-            android:layout_marginEnd="23dp"
-            app:backgroundTint="@null"
-            app:maxImageSize="64dp"
-            android:src="@drawable/ic_check_in"
-            android:scaleType="center"/>
     </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="23dp"
+        app:backgroundTint="@null"
+        app:maxImageSize="64dp"
+        android:src="@drawable/ic_check_in"
+        android:scaleType="center"/>
 </FrameLayout>

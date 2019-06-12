@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity /*implements NavigationView.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_new_leave);
+        setContentView(R.layout.fragment_expanded_news);
       /*  BottomNavigationView navView = findViewById(R.id.nav_view_bottom);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         Toolbar toolbar = findViewById(R.id.toolbar);

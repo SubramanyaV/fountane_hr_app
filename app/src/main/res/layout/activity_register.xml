@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
-            android:layout_width="289dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register"
             android:textAlignment="center"
@@ -17,13 +17,12 @@
             android:textColor="#0887ff"
             android:layout_marginTop="47dp"/>
         <ImageView
-            android:layout_marginTop="27dp"
-            android:layout_width="233dp"
-            android:layout_height="140dp"
-            android:src="@drawable/ic_mailbox"
-            android:layout_gravity="center"/>
+            android:layout_width="135dp"
+            android:layout_height="164dp"
+            android:padding="0dp"
+            android:src="@drawable/ic_register2"
+            android:layout_gravity="center_horizontal"/>
         <TextView
-            android:layout_marginTop="63dp"
             android:layout_marginStart="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,9 +146,9 @@
             android:layout_gravity="center"
             android:layout_marginTop="35dp"
             android:layout_marginBottom="38dp"
-            android:enabled="false"
             android:clickable="true"
             android:text="@string/already_registered_sign_in"
+            android:background="?selectableItemBackground"
             android:textColor="#0887ff"
             android:textSize="12sp"
             android:focusable="true" />
