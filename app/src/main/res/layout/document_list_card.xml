@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:clickable="true"
     android:focusable="true"
-    android:background="@drawable/document_ripple_effect"
+    android:background="?selectableItemBackground"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,7 +38,8 @@
                     android:layout_marginTop="9dp"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="13.5dp"
-                    android:src="@drawable/ic_arrow_point_to_right"/>
+                    android:src="@drawable/ic_arrow_point_to_right"
+                    android:background="@null"/>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"

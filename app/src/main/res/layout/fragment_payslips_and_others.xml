@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PayslipsAndOthersFragment">
-    <ScrollView
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none">
@@ -18,7 +18,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/document_ripple_effect"
+                android:background="?selectableItemBackground"
                 android:orientation="vertical">
                 <RelativeLayout
                     android:layout_marginTop="17dp"
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/document_ripple_effect"
+                android:background="?selectableItemBackground"
                 android:orientation="vertical">
                 <RelativeLayout
                     android:layout_marginTop="17dp"
@@ -128,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/document_ripple_effect"
+                android:background="?selectableItemBackground"
                 android:orientation="vertical">
                 <RelativeLayout
                     android:layout_marginTop="17dp"
@@ -183,7 +183,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/document_ripple_effect"
+                android:background="?selectableItemBackground"
                 android:orientation="vertical">
                 <RelativeLayout
                     android:layout_marginTop="17dp"
@@ -203,7 +203,7 @@
                         android:layout_marginTop="9dp"
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="13.5dp"
-                        android:src="@drawable/ic_arrow_point_to_right"/>
+                        android:src="?selectableItemBackground"/>
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -238,7 +238,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/document_ripple_effect"
+                android:background="?selectableItemBackground"
                 android:orientation="vertical">
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -293,7 +293,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/document_ripple_effect"
+                android:background="?selectableItemBackground"
                 android:orientation="vertical">
                 <RelativeLayout
                     android:layout_marginTop="17dp"
@@ -349,7 +349,7 @@
                 android:orientation="vertical"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/document_ripple_effect">
+                android:background="?selectableItemBackground">
                 <RelativeLayout
                     android:layout_marginTop="17dp"
                     android:layout_width="match_parent"
@@ -403,7 +403,7 @@
                 android:layout_height="wrap_content"
                 android:clickable="true"
                 android:focusable="true"
-                android:background="@drawable/document_ripple_effect"
+                android:background="?selectableItemBackground"
                 android:orientation="vertical">
                 <RelativeLayout
                     android:layout_marginTop="17dp"
@@ -449,10 +449,11 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_width="fill_parent"
                     android:layout_height="1dp"
                     android:background="#40000000"/>
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
 </FrameLayout>
