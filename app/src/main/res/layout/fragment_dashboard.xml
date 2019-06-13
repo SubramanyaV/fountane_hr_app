@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DashboardFragment">
@@ -11,25 +10,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="none">
-    <LinearLayout
-            android:layout_height="wrap_content"
+
+        <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="21dp"
                 android:layout_marginStart="20dp"
-                android:textSize="20sp"
-                android:textColor="#37394c"
+                android:layout_marginTop="21dp"
                 android:gravity="center_horizontal"
-                android:text="Actions"/>
+                android:text="Actions"
+                android:textColor="#37394c"
+                android:textSize="20sp" />
 
             <HorizontalScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scrollbars="none">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
@@ -42,8 +43,8 @@
                         android:layout_height="50dp"
                         android:layout_marginStart="10dp"
                         android:background="@drawable/dashboard_button_1_ripple_effect"
-                        android:elevation="2dp"
                         android:clickable="true"
+                        android:elevation="2dp"
                         android:focusable="true">
 
                         <ImageView
@@ -51,20 +52,21 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:layout_marginStart="10dp"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
                             android:layout_marginTop="7dp"
-                            android:src="@drawable/ic_contract_1"/>
+                            android:src="@drawable/ic_contract_1" />
+
                         <TextView
-                            android:layout_below="@id/imageView1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/imageView1"
                             android:layout_marginStart="10dp"
-                            android:textSize="14sp"
-                            android:textColor="#5babfb"
+                            android:layout_marginTop="5dp"
                             android:gravity="center_horizontal"
-                            android:text="Grievances"/>
+                            android:text="Grievances"
+                            android:textColor="#5babfb"
+                            android:textSize="14sp" />
 
                     </RelativeLayout>
 
@@ -73,8 +75,8 @@
                         android:layout_height="50dp"
                         android:layout_marginStart="10dp"
                         android:background="@drawable/dashboard_button_2_ripple_effect"
-                        android:elevation="2dp"
                         android:clickable="true"
+                        android:elevation="2dp"
                         android:focusable="true">
 
                         <ImageView
@@ -82,20 +84,21 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:layout_marginStart="10dp"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
                             android:layout_marginTop="7dp"
-                            android:src="@drawable/ic_first"/>
+                            android:src="@drawable/ic_first" />
+
                         <TextView
-                            android:layout_below="@id/imageView2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/imageView2"
                             android:layout_marginStart="10dp"
-                            android:textSize="14sp"
-                            android:textColor="#f16e99"
+                            android:layout_marginTop="5dp"
                             android:gravity="center_horizontal"
-                            android:text="Leaves"/>
+                            android:text="Leaves"
+                            android:textColor="#f16e99"
+                            android:textSize="14sp" />
 
                     </RelativeLayout>
 
@@ -104,8 +107,8 @@
                         android:layout_height="50dp"
                         android:layout_marginStart="10dp"
                         android:background="@drawable/dashboard_button_3_ripple_effect"
-                        android:elevation="2dp"
                         android:clickable="true"
+                        android:elevation="2dp"
                         android:focusable="true">
 
                         <ImageView
@@ -113,20 +116,21 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:layout_marginStart="10dp"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
                             android:layout_marginTop="7dp"
-                            android:src="@drawable/ic_bill"/>
+                            android:src="@drawable/ic_bill" />
+
                         <TextView
-                            android:layout_below="@id/imageView3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/imageView3"
                             android:layout_marginStart="10dp"
-                            android:textSize="14sp"
-                            android:textColor="#7470e9"
+                            android:layout_marginTop="5dp"
                             android:gravity="center_horizontal"
-                            android:text="Payslips"/>
+                            android:text="Payslips"
+                            android:textColor="#7470e9"
+                            android:textSize="14sp" />
 
                     </RelativeLayout>
 
@@ -136,58 +140,62 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="15dp"
                         android:background="@drawable/dashboard_button_4_ripple_effect"
+                        android:clickable="true"
                         android:elevation="2dp"
-                        android:focusable="true"
-                        android:clickable="true">
+                        android:focusable="true">
 
                         <ImageView
                             android:id="@+id/imageView4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
-                            android:layout_marginStart="10dp"
                             android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
                             android:layout_marginTop="7dp"
-                            android:src="@drawable/ic_archive_1"/>
+                            android:src="@drawable/ic_archive_1" />
+
                         <TextView
-                            android:layout_below="@id/imageView4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
+                            android:layout_below="@id/imageView4"
                             android:layout_marginStart="10dp"
-                            android:textSize="14sp"
-                            android:textColor="#f99483"
+                            android:layout_marginTop="5dp"
                             android:gravity="center_horizontal"
-                            android:text="Documents"/>
+                            android:text="Documents"
+                            android:textColor="#f99483"
+                            android:textSize="14sp" />
 
                     </RelativeLayout>
 
                 </LinearLayout>
 
             </HorizontalScrollView>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
                 android:layout_marginTop="21dp">
+
                 <TextView
                     android:layout_width="51dp"
                     android:layout_height="24dp"
-                    android:textSize="20sp"
-                    android:textColor="#37394c"
-                    android:gravity="center_horizontal"
                     android:layout_marginStart="20dp"
-                    android:text="News"/>
+                    android:gravity="center_horizontal"
+                    android:text="News"
+                    android:textColor="#37394c"
+                    android:textSize="20sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:text="View All"
-                    android:textSize="14sp"
-                    android:textColor="#0091ff"
                     android:layout_marginEnd="15dp"
+                    android:background="?selectableItemBackground"
                     android:clickable="true"
                     android:focusable="true"
-                    android:background="?selectableItemBackground"/>
+                    android:text="View All"
+                    android:textColor="#0091ff"
+                    android:textSize="14sp" />
             </RelativeLayout>
 
             <android.support.v7.widget.RecyclerView
@@ -195,31 +203,32 @@
                 android:layout_height="193dp"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal"
-                app:layoutManager="android.support.v7.widget.LinearLayoutManager">
-            </android.support.v7.widget.RecyclerView>
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="24dp"
                 android:layout_marginTop="20dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
-                    android:textSize="20sp"
-                    android:textColor="#37394c"
-                    android:gravity="center_horizontal"
                     android:layout_marginStart="20dp"
-                    android:text="Events"/>
+                    android:gravity="center_horizontal"
+                    android:text="Events"
+                    android:textColor="#37394c"
+                    android:textSize="20sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:text="View All"
-                    android:textSize="14sp"
-                    android:textColor="#0091ff"
                     android:layout_marginEnd="15dp"
                     android:clickable="true"
-                    android:focusable="true"/>
+                    android:focusable="true"
+                    android:text="View All"
+                    android:textColor="#0091ff"
+                    android:textSize="14sp" />
             </RelativeLayout>
 
             <android.support.v7.widget.RecyclerView
@@ -227,18 +236,18 @@
                 android:layout_height="193dp"
                 android:layout_marginTop="21dp"
                 android:orientation="horizontal"
-                app:layoutManager="android.support.v7.widget.LinearLayoutManager">
-            </android.support.v7.widget.RecyclerView>
-    </LinearLayout>
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
+
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_marginBottom="25dp"
         android:layout_marginEnd="23dp"
-        app:backgroundTint="@null"
-        app:maxImageSize="64dp"
+        android:layout_marginBottom="25dp"
+        android:scaleType="center"
         android:src="@drawable/ic_check_in"
-        android:scaleType="center"/>
+        app:backgroundTint="@null"
+        app:maxImageSize="64dp" />
 </FrameLayout>

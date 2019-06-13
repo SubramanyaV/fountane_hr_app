@@ -10,13 +10,13 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp">
-    </FrameLayout>
+        android:layout_height="0dp"></FrameLayout>
+
     <View
-        android:layout_above="@id/nav_view_bottom"
         android:layout_width="fill_parent"
         android:layout_height="3dp"
-        android:background="@drawable/divider_gradient"/>
+        android:layout_above="@id/nav_view_bottom"
+        android:background="@drawable/divider_gradient" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/nav_view_bottom"
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:itemBackground="@null"
-        app:menu="@menu/bottom_nav_menu"
-        app:labelVisibilityMode="labeled"
         app:itemIconTint="@drawable/selector_bottombar_item"
-        app:itemTextColor="@drawable/selector_bottombar_item"/>
+        app:itemTextColor="@drawable/selector_bottombar_item"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
 </RelativeLayout>

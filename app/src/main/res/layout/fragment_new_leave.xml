@@ -4,193 +4,213 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NewLeaveFragment">
+
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:layout_marginTop="31dp"
                 android:layout_marginStart="20dp"
-                android:textColor="#80000000"
+                android:layout_marginTop="31dp"
                 android:letterSpacing="-0.01"
-                android:text="Select Leave Type*"/>
+                android:text="Select Leave Type*"
+                android:textColor="#80000000"
+                android:textSize="14sp" />
+
             <HorizontalScrollView
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
                 android:scrollbars="none">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                <Button
-                    android:layout_marginStart="10dp"
-                    android:layout_width="73dp"
-                    android:layout_height="31dp"
-                    android:textAllCaps="false"
-                    android:text="Casual"
-                    android:textSize="12sp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#0887ff"
-                    android:textAlignment="center"
-                    android:background="@drawable/new_casual_leave_button"/>
-                <Button
-                    android:layout_marginStart="10dp"
-                    android:layout_width="73dp"
-                    android:layout_height="31dp"
-                    android:textAllCaps="false"
-                    android:text="Sick"
-                    android:textSize="12sp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#d9d748"
-                    android:textAlignment="center"
-                    android:background="@drawable/new_sick_leave_button"/>
-                <Button
-                    android:layout_marginStart="10dp"
-                    android:layout_width="73dp"
-                    android:layout_height="31dp"
-                    android:textAllCaps="false"
-                    android:text="Paid"
-                    android:textSize="12sp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#a2d072"
-                    android:textAlignment="center"
-                    android:background="@drawable/new_paid_leave_button"/>
-                <Button
-                    android:layout_marginStart="10dp"
-                    android:layout_width="73dp"
-                    android:layout_height="31dp"
-                    android:textAllCaps="false"
-                    android:text="WFH"
-                    android:textSize="12sp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#e86565"
-                    android:textAlignment="center"
-                    android:background="@drawable/new_wfh_leave_button"/>
-                <Button
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_width="73dp"
-                    android:layout_height="31dp"
-                    android:textAllCaps="false"
-                    android:text="Optional"
-                    android:textSize="12sp"
-                    android:fontFamily="sans-serif"
-                    android:textStyle="normal"
-                    android:textColor="#b620e0"
-                    android:textAlignment="center"
-                    android:background="@drawable/new_optional_leave_button"/>
+
+                    <Button
+                        android:layout_width="73dp"
+                        android:layout_height="31dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/new_casual_leave_button"
+                        android:fontFamily="sans-serif"
+                        android:text="Casual"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#0887ff"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:layout_width="73dp"
+                        android:layout_height="31dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/new_sick_leave_button"
+                        android:fontFamily="sans-serif"
+                        android:text="Sick"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#d9d748"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:layout_width="73dp"
+                        android:layout_height="31dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/new_paid_leave_button"
+                        android:fontFamily="sans-serif"
+                        android:text="Paid"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#a2d072"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:layout_width="73dp"
+                        android:layout_height="31dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/new_wfh_leave_button"
+                        android:fontFamily="sans-serif"
+                        android:text="WFH"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#e86565"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <Button
+                        android:layout_width="73dp"
+                        android:layout_height="31dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/new_optional_leave_button"
+                        android:fontFamily="sans-serif"
+                        android:text="Optional"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#b620e0"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
                 </LinearLayout>
             </HorizontalScrollView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginStart="22sp"
-                android:textSize="14sp"
-                android:textColor="#80000000"
+                android:layout_marginTop="20dp"
                 android:letterSpacing="-0.01"
-                android:text="Select Date*"/>
+                android:text="Select Date*"
+                android:textColor="#80000000"
+                android:textSize="14sp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
                 android:layout_marginEnd="25dp">
+
                 <TextView
-                    android:padding="10dp"
                     android:layout_width="0dp"
                     android:layout_height="41dp"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
                     android:background="@drawable/text_input_box"
                     android:clickable="true"
+                    android:drawableEnd="@drawable/ic_calendar_leave"
                     android:focusable="true"
-                    android:textSize="12sp"
-                    android:textColor="#40000000"
+                    android:gravity="center_vertical"
                     android:letterSpacing="-0.01"
+                    android:padding="10dp"
                     android:text="From Date"
-                    android:drawableEnd="@drawable/ic_calendar_leave"/>
+                    android:textColor="#40000000"
+                    android:textSize="12sp" />
+
                 <TextView
-                    android:padding="10dp"
-                    android:layout_marginStart="30dp"
                     android:layout_width="0dp"
                     android:layout_height="41dp"
+                    android:layout_marginStart="30dp"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
                     android:background="@drawable/text_input_box"
                     android:clickable="true"
+                    android:drawableEnd="@drawable/ic_calendar_leave"
                     android:focusable="true"
-                    android:textSize="12sp"
-                    android:textColor="#40000000"
+                    android:gravity="center_vertical"
                     android:letterSpacing="-0.01"
+                    android:padding="10dp"
                     android:text="To Date"
-                    android:drawableEnd="@drawable/ic_calendar_leave"/>
+                    android:textColor="#40000000"
+                    android:textSize="12sp" />
             </LinearLayout>
+
             <TextView
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="22dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:textColor="#80000000"
-                android:letterSpacing="-0.01"
-                android:text="Approval From"/>
-            <LinearLayout
+                android:layout_marginStart="22dp"
                 android:layout_marginTop="20dp"
+                android:letterSpacing="-0.01"
+                android:text="Approval From"
+                android:textColor="#80000000"
+                android:textSize="14sp" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/text_input_box"
                 android:layout_marginStart="25dp"
-                android:layout_marginEnd="24dp">
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/text_input_box">
+
                 <Spinner
                     android:layout_width="match_parent"
                     android:layout_height="41dp"
-                    android:textSize="12sp"
+                    android:letterSpacing="-0.01"
                     android:textColor="#40000000"
-                    android:letterSpacing="-0.01"/>
+                    android:textSize="12sp" />
             </LinearLayout>
+
             <TextView
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="22dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:textColor="#80000000"
-                android:letterSpacing="-0.01"
-                android:text="Reason For Leave"/>
-            <EditText
+                android:layout_marginStart="22dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginEnd="24dp"
+                android:letterSpacing="-0.01"
+                android:text="Reason For Leave"
+                android:textColor="#80000000"
+                android:textSize="14sp" />
+
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="41dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
                 android:background="@drawable/text_input_box"
-                android:padding="10dp"
-                android:textSize="12sp"
-                android:textColor="#40000000"
+                android:hint="Write your reason here…"
                 android:letterSpacing="-0.01"
-                android:hint="Write your reason here…"/>
+                android:padding="10dp"
+                android:textColor="#40000000"
+                android:textSize="12sp" />
+
             <Button
-                android:layout_marginTop="51dp"
-                android:layout_marginBottom="55dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/sky_blue_button"
-                android:text="APPLY"
                 android:layout_gravity="center"
-                android:textSize="16sp"
+                android:layout_marginTop="51dp"
+                android:layout_marginBottom="55dp"
+                android:background="@drawable/sky_blue_button"
+                android:letterSpacing="-0.01"
+                android:text="APPLY"
                 android:textColor="#ffffff"
-                android:letterSpacing="-0.01"/>
+                android:textSize="16sp" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </FrameLayout>

@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             return false;
         }
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.action_search) {
             return true;
-        } else if (id == R.id.action_notifications){
+        } else if (id == R.id.action_notifications) {
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -108,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else if (id == R.id.terms_of_service) {
 
-        } else if (id == R.id.logout){
+        } else if (id == R.id.logout) {
 
         }
 
